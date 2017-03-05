@@ -20,6 +20,7 @@ body {
 
  #particles-js {
    background: #fcf5f5;
+   background-image: url('/assets/white-marble.jpg');
  }
 
 .monogram {
