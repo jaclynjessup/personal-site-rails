@@ -19,12 +19,8 @@
 
 body {
   background: #fcf5f5;
+  background-image: url('/assets/white-marble.jpg');
 }
-
- #particles-js {
-   background: #fcf5f5;
-   background-image: url('/assets/white-marble.jpg');
- }
 
 .monogram {
   position: absolute;
