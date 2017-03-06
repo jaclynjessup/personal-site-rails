@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require particles.min
 //= require_tree .
+
+$(function(){ $(document).foundation(); });

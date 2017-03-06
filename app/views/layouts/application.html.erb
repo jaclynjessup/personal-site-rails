@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>JaclynJessup</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "JaclynJessup" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <img class="monogram-nav" src="/assets/Monogram.png">
+      </div>
+      <div id="responsive-menu">
+        <div id="side-bar-nav">
+          <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i></i></a></li>
+            <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div id="side-bar-btm">
+          <ul>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </head>
 
   <body>
+
     <%= yield %>
+
   </body>
 </html>
