@@ -36,6 +36,8 @@ body {
 
 .monogram-nav {
   height: auto;
+  position: absolute;
+  transform: translate(-10%, -3%);
 }
 
 .top-bar {
@@ -53,21 +55,25 @@ body {
   position: absolute;
   height: 210px;
   top: 50%;
-  margin-top: -120px;
+  margin-top: -50px;
   list-style: none;
 }
 
 #side-bar-btm ul {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   width: 100%;
   display: block;
   padding: 0;
   list-style: none;
   text-align: center;
-  margin: 0;
+  margin: -10px;
 }
 
 i {
   color: black;
+}
+
+.fa:hover {
+    color: white;
 }
