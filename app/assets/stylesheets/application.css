@@ -12,6 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+ *= require font-awesome
+
  */
 
 body {
@@ -20,6 +23,7 @@ body {
 
  #particles-js {
    background: #fcf5f5;
+   background-image: url('/assets/white-marble.jpg');
  }
 
 .monogram {
@@ -28,4 +32,48 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 200px;
+}
+
+.monogram-nav {
+  height: auto;
+  position: absolute;
+  transform: translate(-10%, -3%);
+}
+
+.top-bar {
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+}
+
+#side-bar-nav ul {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top: 50%;
+  margin-top: -50px;
+  list-style: none;
+}
+
+#side-bar-btm ul {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: -10px;
+}
+
+i {
+  color: black;
+}
+
+.fa:hover {
+    color: white;
 }
